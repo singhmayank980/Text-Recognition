@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
             } else {
                 cameraSource = new CameraSource.Builder(getApplicationContext(), textRecognizer)
                         .setFacing(CameraSource.CAMERA_FACING_BACK)
-                        .setRequestedPreviewSize(1280, 1024).setRequestedFps(2.0f)
+                        .setRequestedPreviewSize(1000, 1000).setRequestedFps(2.0f)
                         .setAutoFocusEnabled(true).build();
                 cameraView.getHolder().addCallback(new SurfaceHolder.Callback() {
                     @Override
